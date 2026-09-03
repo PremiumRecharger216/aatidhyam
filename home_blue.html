@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Aathidhyam Service Apartments</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "primary-fixed-dim": "#abc8fa",
+                                                "on-secondary-fixed-variant": "#3b4951",
+                                                "on-primary-container": "#85a1d1",
+                                                "surface-white": "#FFFFFF",
+                                                "tertiary-fixed-dim": "#c4c7c9",
+                                                "on-surface-variant": "#43474f",
+                                                "surface-container-lowest": "#ffffff",
+                                                "secondary-container": "#d3e2ed",
+                                                "tertiary": "#1e2224",
+                                                "surface-tint": "#435f8b",
+                                                "surface": "#faf9fd",
+                                                "surface-container-low": "#f4f3f7",
+                                                "tertiary-fixed": "#e0e3e5",
+                                                "secondary": "#526069",
+                                                "surface-container-high": "#e9e7ec",
+                                                "inverse-primary": "#abc8fa",
+                                                "inverse-surface": "#2f3034",
+                                                "on-tertiary-fixed": "#191c1e",
+                                                "primary": "#002147",
+                                                "error": "#ba1a1a",
+                                                "tertiary-container": "#343739",
+                                                "on-tertiary": "#ffffff",
+                                                "surface-dim": "#dad9de",
+                                                "on-secondary-fixed": "#0f1d25",
+                                                "on-error-container": "#93000a",
+                                                "error-container": "#ffdad6",
+                                                "on-background": "#1a1c1f",
+                                                "surface-variant": "#e3e2e6",
+                                                "on-error": "#ffffff",
+                                                "surface-container": "#eeedf1",
+                                                "secondary-fixed-dim": "#bac9d3",
+                                                "on-primary": "#ffffff",
+                                                "primary-container": "#183761",
+                                                "primary-fixed": "#d6e3ff",
+                                                "on-secondary": "#ffffff",
+                                                "on-tertiary-fixed-variant": "#444749",
+                                                "surface-bright": "#faf9fd",
+                                                "on-primary-fixed": "#001b3c",
+                                                "surface-container-highest": "#e3e2e6",
+                                                "on-primary-fixed-variant": "#2a4772",
+                                                "on-secondary-container": "#56656e",
+                                                "heritage-navy": "#183761",
+                                                "background": "#faf9fd",
+                                                "sky-blue-pastel": "#E3F2FD",
+                                                "on-surface": "#1a1c1f",
+                                                "secondary-fixed": "#d6e5ef",
+                                                "outline": "#747780",
+                                                "outline-variant": "#c4c6d0",
+                                                "on-tertiary-container": "#9da0a2",
+                                                "inverse-on-surface": "#f1f0f4"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "section-gap": "80px",
+                                                "gutter": "24px",
+                                                "base": "8px",
+                                                "margin-desktop": "64px",
+                                                "margin-mobile": "20px",
+                                                "container-max": "1280px"
+                                        },
+                                        "fontFamily": {
+                                                "label-sm": [
+                                                        "Manrope"
+                                                ],
+                                                "headline-md": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "label-md": [
+                                                        "Manrope"
+                                                ],
+                                                "body-lg": [
+                                                        "Manrope"
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "headline-sm": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "display-lg": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "body-md": [
+                                                        "Manrope"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-sm": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "56px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                .glass-panel {
+                        background: rgba(255, 255, 255, 0.85);
+                        backdrop-filter: blur(12px);
+                        -webkit-backdrop-filter: blur(12px);
+                        border: 1px solid rgba(255, 255, 255, 0.3);
+                }
+
+                .soft-shadow {
+                        box-shadow: 0 20px 40px -10px rgba(24, 55, 97, 0.08);
+                }
+
+                .hover-lift {
+                        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+
+                .hover-lift:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 30px 60px -15px rgba(24, 55, 97, 0.12);
+                }
+        </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+        <!-- Top Navigation -->
+        <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md shadow-sm shadow-primary/10 transition-all duration-300"
+                id="navbar">
+                <div
+                        class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+                        <!-- Brand -->
+                        <a class="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed tracking-tight hover:opacity-90 transition-all duration-300 active:scale-95 transition-transform"
+                                href="#">
+                                Aathidhyam
+                        </a>
+                        <!-- Desktop Links -->
+                        <div class="hidden md:flex items-center gap-8">
+                                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-90 transition-all duration-300 active:scale-95 transition-transform"
+                                        href="suits_blue.html">Suits</a>
+                                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-90 transition-all duration-300 active:scale-95 transition-transform"
+                                        href="#services">Services</a>
+                                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-90 transition-all duration-300 active:scale-95 transition-transform"
+                                        href="#gallery">Gallery</a>
+                                <a class="font-label-md text-label-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-90 transition-all duration-300 active:scale-95 transition-transform"
+                                        href="#contact">Contact</a>
+                                <a class="font-label-md text-label-md bg-sky-blue-pastel text-primary px-6 py-3 rounded hover:bg-secondary-container hover:text-primary transition-all duration-300 hover:opacity-90 active:scale-95"
+                                        href="#book">
+                                        Book Now
+                                </a>
+                        </div>
+                        <!-- Mobile Menu Toggle -->
+                        <button aria-label="Toggle menu" class="md:hidden text-primary p-2">
+                                <span class="material-symbols-outlined text-3xl">menu</span>
+                        </button>
+                </div>
+        </nav>
+        <!-- Hero Section -->
+        <header class="relative min-h-[921px] flex items-center justify-center pt-20 overflow-hidden">
+                <!-- Hero Background -->
+                <div class="absolute inset-0 z-0">
+                        <div class="bg-cover bg-center w-full h-full"
+                                data-alt="A breathtaking, wide-angle interior photograph of a spacious, ultra-luxury serviced apartment living room. The scene features floor-to-ceiling windows letting in soft, diffused morning sunlight that illuminates plush, minimalist beige sofas, rich dark wood accents, and tasteful metallic gold fixtures. The atmosphere is serene, high-end, and impeccably clean, conveying understated elegance and premium comfort."
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpB19zeJfH02J9WcrDEJE9s4kof0cnvt0HrAU5nHm2UJM7VEmkdetGVYiyKFZsB1pA9_vszCLH9XKgFD76PnDp4MFtgy9CWxSx6xrNo4uFSznvlvnufeqMg4TyfegRdnkq7vBWzdFCAu0cLl42dltvGvTAs0cHs9lHeRl99Ni7n4Kmy2PFXYgAkq3uUxKyFMYPzHH61xUQYgDG47dZ15QW8DqXdQGfwleINJ2Ev-4O1x2V3YIpRy2rdg')">
+                        </div>
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+                </div>
+                <div class="relative z-10 max-w-container-max w-full px-margin-mobile md:px-margin-desktop">
+                        <div class="glass-panel p-8 md:p-16 rounded-xl max-w-2xl soft-shadow fade-in-up">
+                                <p class="font-label-md text-label-md text-primary uppercase tracking-widest mb-4">
+                                        Understated Luxury</p>
+                                <h1
+                                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
+                                        Your Home Away from Home.
+                                </h1>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                                        Experience premium hospitality at Aathidhyam. Where the comfort of an apartment
+                                        meets the pristine service of a luxury hotel.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                        <a class="inline-flex items-center justify-center px-8 py-4 bg-sky-blue-pastel text-primary font-label-md text-label-md rounded hover:bg-secondary-container hover:text-primary transition-colors duration-300 text-center"
+                                                href="#book">
+                                                Book Your Stay
+                                        </a>
+                                        <a class="inline-flex items-center justify-center px-8 py-4 border border-primary text-primary font-label-md text-label-md rounded hover:bg-surface-container transition-colors duration-300 text-center"
+                                                href="#gallery">
+                                                View Gallery
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+        </header>
+        <!-- About Section (Asymmetric Layout) -->
+        <section class="py-24 md:py-32 bg-surface" id="about">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+                                <div class="lg:col-span-5 space-y-8">
+                                        <div class="flex items-center gap-4 text-primary mb-6">
+                                                <span class="w-12 h-[1px] bg-sky-blue-pastel"></span>
+                                                <span class="font-label-md text-label-md uppercase tracking-wider">The
+                                                        Heritage</span>
+                                        </div>
+                                        <h2 class="font-headline-md text-headline-md text-primary">
+                                                Redefining Long-Term Comfort.
+                                        </h2>
+                                        <p class="font-body-lg text-body-lg text-on-surface-variant">
+                                                Aathidhyam was born from a simple idea: that staying away from home
+                                                shouldn't mean compromising on space, privacy, or peace of mind. We
+                                                meticulously blend the expansive, thoughtful layout of a private
+                                                residence with the attentive, frictionless service of a premium hotel.
+                                        </p>
+                                        <p class="font-body-md text-body-md text-outline">
+                                                Designed for discerning travelers and corporate expatriates, our spaces
+                                                are sanctuaries of calm amidst the bustling city.
+                                        </p>
+                                        <a class="inline-flex items-center text-primary font-label-md text-label-md group"
+                                                href="#story">
+                                                Discover Our Story
+                                                <span
+                                                        class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                        </a>
+                                </div>
+                                <div
+                                        class="lg:col-span-7 relative h-[500px] lg:h-[700px] rounded-2xl overflow-hidden soft-shadow">
+                                        <img class="absolute inset-0 w-full h-full object-cover"
+                                                data-alt="A high-end editorial shot focusing on the tactile details of a luxury apartment bedroom. The image showcases crisp white linen on a king-sized bed, softly lit by a minimalist brass bedside lamp. In the softly blurred background, large windows reveal a serene urban skyline at twilight. The mood is tranquil, sophisticated, and inviting, emphasizing premium materials and comfort."
+                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZqfDVq3TPWkU2lSXDZLFeMip0e9n22cd9XRwjjqhXygL7b9jPtj7OnmWXmRbV3E3izQ6Xz2uQlVbmMixcXQr7ZMX-w7ToKKImNWL_bqb_UPr3KBzgNC0cIWMM6ODJeD0vK_AuXpyJ9dCZdP-68RO7qoM7M6jw8jVq12DSRtgirxyOWuahXHx8HxB1C-ir-owquWCJEEVk_58UfSBCTUfeeFsteCgKjkoaonLqei6vossO7Sdjb9LmsA" />
+                                        <!-- Floating Badge -->
+                                        <div
+                                                class="absolute bottom-8 left-8 bg-surface p-6 rounded-lg soft-shadow flex items-center gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full bg-sky-blue-pastel flex items-center justify-center text-primary">
+                                                        <span class="material-symbols-outlined"
+                                                                data-weight="fill">workspace_premium</span>
+                                                </div>
+                                                <div>
+                                                        <p class="font-headline-sm text-headline-sm text-primary mb-1">
+                                                                5-Star</p>
+                                                        <p
+                                                                class="font-label-sm text-label-sm text-outline uppercase tracking-wider">
+                                                                Hospitality Standard</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Featured Suites (Bento Grid Style) -->
+        <section class="py-24 md:py-32 bg-surface-container-lowest" id="rooms">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                        <div class="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+                                <h2 class="font-headline-md text-headline-md text-primary mb-6">Curated Spaces</h2>
+                                <p class="font-body-lg text-body-lg text-on-surface-variant">Select from our
+                                        meticulously designed apartments, tailored to fit the length and nature of your
+                                        stay.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                                <!-- Suite Card 1 -->
+                                <div
+                                        class="bg-surface rounded-xl overflow-hidden hover-lift border border-surface-variant group flex flex-col">
+                                        <div class="relative h-64 overflow-hidden">
+                                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                        data-alt="A bright and airy luxury studio apartment interior. The space is intelligently designed with a seamless flow between a sleek modern kitchenette with white cabinetry, a cozy living area with a plush navy accent chair, and a comfortable sleeping nook. Sunlight streams in, highlighting the clean lines and neutral color palette, conveying efficiency and elegance."
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4G7XW0bCUuy9tlIF1RbtYcJs2mwJM90K4erpLvHGmnth518AX29PUyK_iyRIWquYqIUx6gfUSxwP4UhpLBgv0YGg5z9-1o_QajGT7ctOGC0MOLz-Km-F2LrEzNesI9V742rc6vLHdzQfZQkkGn_2E_yB7OnUpfYXOMU7-o3GVAlRPQDyzy1QwmaYogBmPxuX1l92PcVV5_eNcVX8RRxOX-bpF7DySL-7C7wl30TTQ0pf6XC9iv52QAw" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-sm text-label-sm text-primary uppercase tracking-wide">
+                                                        Studio</div>
+                                        </div>
+                                        <div class="p-8 flex flex-col flex-grow">
+                                                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">The
+                                                        Executive Studio</h3>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                                                        Perfect for the solo traveler or business professional seeking
+                                                        an efficient, stylish sanctuary.</p>
+                                                <div
+                                                        class="flex items-center gap-4 text-primary mb-8 border-t border-surface-variant pt-6">
+                                                        <div class="flex items-center gap-1" title="High-Speed WiFi">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">wifi</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Smart TV"><span
+                                                                        class="material-symbols-outlined text-[20px]">tv</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Kitchenette"><span
+                                                                        class="material-symbols-outlined text-[20px]">kitchen</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Queen Bed"><span
+                                                                        class="material-symbols-outlined text-[20px]">bed</span>
+                                                        </div>
+                                                </div>
+                                                <div class="flex items-center justify-between">
+                                                        <div>
+                                                                <span
+                                                                        class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Starting
+                                                                        at</span>
+                                                                <span
+                                                                        class="font-body-lg text-body-lg text-primary font-semibold">₹2500<span
+                                                                                class="text-sm font-normal text-outline">/night</span></span>
+                                                        </div>
+                                                        <button
+                                                                class="text-sky-blue-pastel font-label-md text-label-md hover:text-secondary-fixed-dim transition-colors flex items-center gap-1">
+                                                                Details <span
+                                                                        class="material-symbols-outlined text-sm">arrow_forward</span>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Suite Card 2 (Featured/Larger in layout conceptually) -->
+                                <div
+                                        class="bg-surface rounded-xl overflow-hidden hover-lift border border-surface-variant group flex flex-col relative">
+                                        <div
+                                                class="absolute inset-0 border-2 border-sky-blue-pastel/20 rounded-xl pointer-events-none z-10">
+                                        </div>
+                                        <div class="relative h-64 overflow-hidden">
+                                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                        data-alt="A spacious and sophisticated 1 BHK luxury serviced apartment. The image captures a beautifully appointed living room opening up to a modern, fully equipped kitchen with marble countertops. The decor features a blend of heritage elements and contemporary furniture, bathed in warm, inviting light, offering a perfect balance of domestic comfort and hotel luxury."
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA3rBGYQDaUia6ElR7kNco0IieTOGPH70fIJGxJ6IHHpjebf3hq1TDAEg24lzxSBOiScFjdMY4keHSmEtUzB-8THin0pKkARgAOi7hUnOPv72dm_l4rQzeWMluFP1ZXGB5pCn_CqMhkC_Y3PeJ2N4neC7CBzMU5Cznap0zlt0-KWmHQdDC0fWgpxP12oQBakSkF6RBUGkQ23-nfg8JYdpekXQGdbFlr0G_DIsGtd7ZHI7q0mWZtzdVyA" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-sky-blue-pastel text-primary px-3 py-1 rounded font-label-sm text-label-sm uppercase tracking-wide shadow-md">
+                                                        Most Popular</div>
+                                        </div>
+                                        <div class="p-8 flex flex-col flex-grow">
+                                                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">1
+                                                        Bedroom Premium</h3>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                                                        A generous layout featuring a distinct living area and private
+                                                        bedroom, ideal for extended stays.</p>
+                                                <div
+                                                        class="flex items-center gap-4 text-primary mb-8 border-t border-surface-variant pt-6">
+                                                        <div class="flex items-center gap-1" title="High-Speed WiFi">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">wifi</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Full Kitchen"><span
+                                                                        class="material-symbols-outlined text-[20px]">cooking</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="King Bed"><span
+                                                                        class="material-symbols-outlined text-[20px]">king_bed</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Washer/Dryer"><span
+                                                                        class="material-symbols-outlined text-[20px]">local_laundry_service</span>
+                                                        </div>
+                                                </div>
+                                                <div class="flex items-center justify-between">
+                                                        <div>
+                                                                <span
+                                                                        class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Starting
+                                                                        at</span>
+                                                                <span
+                                                                        class="font-body-lg text-body-lg text-primary font-semibold">₹2200<span
+                                                                                class="text-sm font-normal text-outline">/night</span></span>
+                                                        </div>
+                                                        <button
+                                                                class="px-6 py-2 bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-primary-container transition-colors">
+                                                                Select
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Suite Card 3 -->
+                                <div
+                                        class="bg-surface rounded-xl overflow-hidden hover-lift border border-surface-variant group flex flex-col">
+                                        <div class="relative h-64 overflow-hidden">
+                                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                                        data-alt="An expansive, opulent 2 BHK luxury suite living and dining area. The scene is grand, featuring a large dining table that seats six, a sweeping curved sofa, and panoramic windows offering breathtaking city views. The color scheme is rich with deep blues, golds, and creamy whites, communicating top-tier exclusivity and ample space for families or executive teams."
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmy6wrpdH-nyK360EghfkQ5Ma568OhjHkffRFZWXyab3K1r4XRR0o1jR9_RiBr1cLoBIeY33pfSfPd76jPHicLpXO-Q2P9JgkfN44xOZeAqcOkRillK2UqhXJgKX85mYyK9fkXGc9MJSNBNZmigp96UfKEQdQhkZhLBrWxypRj_ibd8WuNgcCYMgdSsGIacowVxqBHELiJxR0-80DDcbflGUtKWmT239692VefCmTCqPIwxw64s7yB2g" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-surface/90 backdrop-blur px-3 py-1 rounded font-label-sm text-label-sm text-primary uppercase tracking-wide">
+                                                        Luxury Suite</div>
+                                        </div>
+                                        <div class="p-8 flex flex-col flex-grow">
+                                                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">2
+                                                        Bedroom Grand</h3>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                                                        The ultimate residence. Expansive living spaces, dining area,
+                                                        and uncompromising privacy for families or groups.</p>
+                                                <div
+                                                        class="flex items-center gap-4 text-primary mb-8 border-t border-surface-variant pt-6">
+                                                        <div class="flex items-center gap-1" title="High-Speed WiFi">
+                                                                <span
+                                                                        class="material-symbols-outlined text-[20px]">wifi</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Dining Area"><span
+                                                                        class="material-symbols-outlined text-[20px]">restaurant</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="2 Bathrooms"><span
+                                                                        class="material-symbols-outlined text-[20px]">bathtub</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-1" title="Balcony"><span
+                                                                        class="material-symbols-outlined text-[20px]">balcony</span>
+                                                        </div>
+                                                </div>
+                                                <div class="flex items-center justify-between">
+                                                        <div>
+                                                                <span
+                                                                        class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Starting
+                                                                        at</span>
+                                                                <span
+                                                                        class="font-body-lg text-body-lg text-primary font-semibold">₹3200<span
+                                                                                class="text-sm font-normal text-outline">/night</span></span>
+                                                        </div>
+                                                        <button
+                                                                class="text-sky-blue-pastel font-label-md text-label-md hover:text-secondary-fixed-dim transition-colors flex items-center gap-1">
+                                                                Details <span
+                                                                        class="material-symbols-outlined text-sm">arrow_forward</span>
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="mt-16 text-center">
+                                <a class="inline-flex items-center px-8 py-3 border border-outline-variant text-primary font-label-md text-label-md rounded hover:bg-surface-variant transition-colors"
+                                        href="#all-rooms">
+                                        View All Accommodations
+                                </a>
+                        </div>
+                </div>
+        </section>
+        <!-- Amenities Grid -->
+        <section class="py-24 md:py-32 bg-primary text-on-primary" id="services">
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8">
+                                <div class="lg:col-span-1 flex flex-col justify-center">
+                                        <h2 class="font-headline-md text-headline-md mb-6 text-on-primary">
+                                                Uncompromising Service.</h2>
+                                        <p class="font-body-md text-body-md text-on-primary-container mb-8">
+                                                Every detail is managed seamlessly to ensure your stay is completely
+                                                effortless.
+                                        </p>
+                                </div>
+                                <div class="lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+                                        <!-- Amenity Item -->
+                                        <div class="flex flex-col gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
+                                                        <span
+                                                                class="material-symbols-outlined text-sky-blue-pastel font-light text-[28px]">room_service</span>
+                                                </div>
+                                                <h4 class="font-label-md text-label-md">24/7 Concierge</h4>
+                                                <p class="font-body-md text-body-md text-on-primary-container text-sm">
+                                                        Round-the-clock assistance for dining, transport, and local
+                                                        recommendations.</p>
+                                        </div>
+                                        <!-- Amenity Item -->
+                                        <div class="flex flex-col gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
+                                                        <span
+                                                                class="material-symbols-outlined text-sky-blue-pastel font-light text-[28px]">cleaning_services</span>
+                                                </div>
+                                                <h4 class="font-label-md text-label-md">Daily Housekeeping</h4>
+                                                <p class="font-body-md text-body-md text-on-primary-container text-sm">
+                                                        Meticulous cleaning services ensuring your space remains
+                                                        pristine daily.</p>
+                                        </div>
+                                        <!-- Amenity Item -->
+                                        <div class="flex flex-col gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
+                                                        <span
+                                                                class="material-symbols-outlined text-sky-blue-pastel font-light text-[28px]">wifi</span>
+                                                </div>
+                                                <h4 class="font-label-md text-label-md">Enterprise Wi-Fi</h4>
+                                                <p class="font-body-md text-body-md text-on-primary-container text-sm">
+                                                        Dedicated high-speed, secure network ideal for uninterrupted
+                                                        remote work.</p>
+                                        </div>
+                                        <!-- Amenity Item -->
+                                        <div class="flex flex-col gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
+                                                        <span
+                                                                class="material-symbols-outlined text-sky-blue-pastel font-light text-[28px]">fitness_center</span>
+                                                </div>
+                                                <h4 class="font-label-md text-label-md">Wellness Center</h4>
+                                                <p class="font-body-md text-body-md text-on-primary-container text-sm">
+                                                        State-of-the-art gym and spa facilities available exclusively
+                                                        for residents.</p>
+                                        </div>
+                                        <!-- Amenity Item -->
+                                        <div class="flex flex-col gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
+                                                        <span
+                                                                class="material-symbols-outlined text-sky-blue-pastel font-light text-[28px]">local_cafe</span>
+                                                </div>
+                                                <h4 class="font-label-md text-label-md">In-Suite Dining</h4>
+                                                <p class="font-body-md text-body-md text-on-primary-container text-sm">
+                                                        Gourmet meals delivered straight to your door from our partner
+                                                        restaurants.</p>
+                                        </div>
+                                        <!-- Amenity Item -->
+                                        <div class="flex flex-col gap-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-on-primary/20 flex items-center justify-center">
+                                                        <span
+                                                                class="material-symbols-outlined text-sky-blue-pastel font-light text-[28px]">security</span>
+                                                </div>
+                                                <h4 class="font-label-md text-label-md">Advanced Security</h4>
+                                                <p class="font-body-md text-body-md text-on-primary-container text-sm">
+                                                        Biometric access, 24/7 surveillance, and secure underground
+                                                        parking.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Testimonials (Glassmorphism overlap conceptually) -->
+        <section class="py-24 md:py-32 bg-surface relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low rounded-bl-[120px] -z-10">
+                </div>
+                <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                        <div class="mb-16">
+                                <h2 class="font-headline-md text-headline-md text-primary">Guest Experiences</h2>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <!-- Review Card -->
+                                <div
+                                        class="bg-surface-container-lowest p-10 rounded-2xl soft-shadow border border-surface-variant">
+                                        <div class="flex text-sky-blue-pastel mb-6">
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                        </div>
+                                        <p class="font-body-lg text-body-lg text-primary mb-8 italic">"When you're in
+                                                Hyderabad for work, Aathidhyam is the perfect blend of home and luxury.
+                                                Spacious apartments, quiet neighbourhood, and the service is top-notch.
+                                                Definitely my go-to place for longer stays."
+                                        </p>
+                                        <div class="flex items-center gap-4">
+                                                <div class="w-12 h-12 bg-surface-dim rounded-full overflow-hidden">
+                                                        <img class="w-full h-full object-cover"
+                                                                data-alt="A refined, professional portrait of a female executive in her 40s. She is smiling softly, dressed in a sharp beige blazer. The background is a gently blurred, high-end hotel lobby environment, conveying success and discerning taste. Soft, natural light highlights her features."
+                                                                src="https://i0.wp.com/journals-times.com/wp-content/uploads/2023/09/Rajessh-M-Iyer-photo.png" />
+                                                </div>
+                                                <div>
+                                                        <h5 class="font-label-md text-label-md text-primary">Raghava
+                                                                Reddy</h5>
+                                                        <p class="font-label-sm text-label-sm text-outline">Corporate
+                                                                Executive, 3-month stay</p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Review Card -->
+                                <div
+                                        class="bg-surface-container-lowest p-10 rounded-2xl soft-shadow border border-surface-variant md:translate-y-12">
+                                        <div class="flex text-sky-blue-pastel mb-6">
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                                <span class="material-symbols-outlined" data-weight="fill">star</span>
+                                        </div>
+                                        <p class="font-body-lg text-body-lg text-primary mb-8 italic">"The 2 Bedroom
+                                                suite was ideal for our family vacation. It had the perfect blend of
+                                                space, luxury, and service. Kids had their own room and we enjoyed
+                                                hotel-tier service. Highly recommended."</p>
+                                        <div class="flex items-center gap-4">
+                                                <div class="w-12 h-12 bg-surface-dim rounded-full overflow-hidden">
+                                                        <img class="w-full h-full object-cover"
+                                                                data-alt="A warm, relaxed portrait of a middle-aged man with a neat beard, wearing a high-quality navy polo shirt. He has an approachable, genuine smile. The background suggests a bright, sunny luxury resort or premium residential balcony setting, evoking a sense of leisure and satisfaction."
+                                                                src="https://pbs.twimg.com/media/GohoaPgWEAAx3qO.jpg" />
+                                                </div>
+                                                <div>
+                                                        <h5 class="font-label-md text-label-md text-primary">Shiva Reddy
+                                                        </h5>
+                                                        <p class="font-label-sm text-label-sm text-outline">Leisure
+                                                                Traveler, 2-week stay</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Shared Components Footer Integration -->
+        <footer class="w-full py-16 bg-primary dark:bg-tertiary-container border-t border-outline-variant/20">
+                <div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+                        <div class="md:col-span-1">
+                                <h3
+                                        class="font-headline-sm text-headline-sm text-on-primary dark:text-on-tertiary-container mb-4">
+                                        Aathidhyam</h3>
+                                <p
+                                        class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 text-sm">
+                                        © 2026 Aathidhyam Service Apartments. Heritage Modernity defined.
+                                </p>
+                        </div>
+                        <div class="md:col-span-3 flex flex-wrap gap-8 md:justify-end">
+                                <a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-on-primary dark:hover:text-on-tertiary-container hover:text-sky-blue-pastel transition-colors"
+                                        href="#">Privacy Policy</a>
+                                <a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-on-primary dark:hover:text-on-tertiary-container hover:text-sky-blue-pastel transition-colors"
+                                        href="#">Terms of Service</a>
+                                <a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-on-primary dark:hover:text-on-tertiary-container hover:text-sky-blue-pastel transition-colors"
+                                        href="#">Location</a>
+                                <a class="font-body-md text-body-md text-on-primary/80 dark:text-on-tertiary-container/80 hover:text-on-primary dark:hover:text-on-tertiary-container hover:text-sky-blue-pastel transition-colors"
+                                        href="#">Contact Us</a>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                // Simple scroll effect for navbar
+                window.addEventListener('scroll', () => {
+                        const nav = document.getElementById('navbar');
+                        if (window.scrollY > 50) {
+                                nav.classList.add('shadow-md');
+                                nav.classList.replace('bg-surface/80', 'bg-surface/95');
+                        } else {
+                                nav.classList.remove('shadow-md');
+                                nav.classList.replace('bg-surface/95', 'bg-surface/80');
+                        }
+                });
+        </script>
+</body>
+
+</html>

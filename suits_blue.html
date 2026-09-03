@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Rooms &amp; Suites | Aathidhyam Service Apartments</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <style type="text/tailwindcss">
+                @layer utilities {
+            .material-symbols-outlined {
+                font-family: 'Material Symbols Outlined';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 24px;
+                line-height: 1;
+                letter-spacing: normal;
+                text-transform: none;
+                display: inline-block;
+                white-space: nowrap;
+                word-wrap: normal;
+                direction: ltr;
+                -webkit-font-feature-settings: 'liga';
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+    </style>
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "primary-fixed-dim": "#abc8fa",
+                                                "on-secondary-fixed-variant": "#3b4951",
+                                                "on-primary-container": "#85a1d1",
+                                                "surface-white": "#FFFFFF",
+                                                "tertiary-fixed-dim": "#c4c7c9",
+                                                "on-surface-variant": "#43474f",
+                                                "surface-container-lowest": "#ffffff",
+                                                "secondary-container": "#d3e2ed",
+                                                "tertiary": "#1e2224",
+                                                "surface-tint": "#435f8b",
+                                                "surface": "#faf9fd",
+                                                "surface-container-low": "#f4f3f7",
+                                                "tertiary-fixed": "#e0e3e5",
+                                                "secondary": "#526069",
+                                                "surface-container-high": "#e9e7ec",
+                                                "inverse-primary": "#abc8fa",
+                                                "inverse-surface": "#2f3034",
+                                                "on-tertiary-fixed": "#191c1e",
+                                                "primary": "#002147",
+                                                "error": "#ba1a1a",
+                                                "tertiary-container": "#343739",
+                                                "on-tertiary": "#ffffff",
+                                                "surface-dim": "#dad9de",
+                                                "on-secondary-fixed": "#0f1d25",
+                                                "on-error-container": "#93000a",
+                                                "error-container": "#ffdad6",
+                                                "on-background": "#1a1c1f",
+                                                "surface-variant": "#e3e2e6",
+                                                "on-error": "#ffffff",
+                                                "surface-container": "#eeedf1",
+                                                "secondary-fixed-dim": "#bac9d3",
+                                                "on-primary": "#ffffff",
+                                                "primary-container": "#183761",
+                                                "primary-fixed": "#d6e3ff",
+                                                "on-secondary": "#ffffff",
+                                                "on-tertiary-fixed-variant": "#444749",
+                                                "surface-bright": "#faf9fd",
+                                                "on-primary-fixed": "#001b3c",
+                                                "surface-container-highest": "#e3e2e6",
+                                                "on-primary-fixed-variant": "#2a4772",
+                                                "on-secondary-container": "#56656e",
+                                                "heritage-navy": "#183761",
+                                                "background": "#faf9fd",
+                                                "sky-blue-pastel": "#E3F2FD",
+                                                "on-surface": "#1a1c1f",
+                                                "secondary-fixed": "#d6e5ef",
+                                                "outline": "#747780",
+                                                "outline-variant": "#c4c6d0",
+                                                "on-tertiary-container": "#9da0a2",
+                                                "inverse-on-surface": "#f1f0f4"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "container-max": "1280px",
+                                                "section-gap": "80px",
+                                                "gutter": "24px",
+                                                "base": "8px",
+                                                "margin-desktop": "64px",
+                                                "margin-mobile": "20px"
+                                        },
+                                        "fontFamily": {
+                                                "label-sm": [
+                                                        "Manrope"
+                                                ],
+                                                "headline-md": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "label-md": [
+                                                        "Manrope"
+                                                ],
+                                                "body-lg": [
+                                                        "Manrope"
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "headline-sm": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "display-lg": [
+                                                        "Libre Caslon Text"
+                                                ],
+                                                "body-md": [
+                                                        "Manrope"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "label-sm": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "display-lg-mobile": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-sm": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "display-lg": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "56px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+</head>
+
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+        <!-- TopNavBar -->
+        <nav
+                class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0_10px_30px_-15px_rgba(24,55,97,0.1)] transition-all duration-300">
+                <div
+                        class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+                        <a class="font-headline-sm text-headline-sm text-primary italic tracking-wide" href="#">
+                                Aathidhyam
+                        </a>
+                        <div
+                                class="hidden md:flex items-center space-x-8 font-body-md text-body-md uppercase tracking-wider">
+                                <a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer hover:text-sky-blue-pastel transition-all duration-300"
+                                        href="home_blue.html">Home</a>
+                                <a class="text-primary border-b-2 border-sky-blue-pastel font-bold pb-1 cursor-pointer transition-transform duration-200 active:scale-95"
+                                        href="#">Suites</a>
+                                <a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer hover:text-sky-blue-pastel transition-all duration-300"
+                                        href="#">Services</a>
+                                <a class="text-on-surface-variant hover:text-primary transition-colors cursor-pointer hover:text-sky-blue-pastel transition-all duration-300"
+                                        href="#">Contact</a>
+                        </div>
+                        <button
+                                class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container transition-colors duration-300 shadow-sm hidden md:block">
+                                Book Now
+                        </button>
+                        <button class="md:hidden text-primary">
+                                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                        </button>
+                </div>
+        </nav>
+        <!-- Page Header -->
+        <header
+                class="relative pt-32 pb-24 md:pt-48 md:pb-32 bg-surface-container-low flex items-center justify-center overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                        <div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-multiply"
+                                data-alt="A serene, high-end luxury apartment living room viewed in soft, natural morning light. The color palette is minimal, featuring creamy off-whites, subtle silver greys, and deep navy accents in the furnishings. Elegant, sheer curtains diffuse the light, creating a calm and inviting atmosphere. The overall style is modern corporate luxury, designed to evoke comfort and premium hospitality."
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVRWv7bYvpZIEd5WhpmRLsLtkcd95LNE2oudQ8T0slC2SpOhDrDPT-Ss_oX6qMbF5dkNkVB2B2djB86KlwWV9g-Reo7cyTcQb-cNNi984sMMEv44LTat8nUQ4IoxFeUpBUG96F_0hOAuk4NJezwXW_RFRG2UQLfLt5_aP6wr13I7fl9mZcp0wiRMJ86Rur08X5vUcv1yI8nO9NCSldAV8JQffCi4-Y-KkubjkCJuo4AGSr-cT_WGGb2w')">
+                        </div>
+                </div>
+                <div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
+                        <h1
+                                class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-6">
+                                Our Accommodations</h1>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                                Discover your perfect residence in the city. Designed for discerning travelers and
+                                corporate expatriates who seek the comforts of home with the polish of a high-end hotel.
+                        </p>
+                </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-grow flex flex-col">
+                <!-- Filter Tabs -->
+                <section class="py-12 bg-surface">
+                        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                                <div
+                                        class="flex flex-wrap justify-center gap-4 md:gap-8 border-b border-surface-variant pb-4">
+                                        <button
+                                                class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-sky-blue-pastel pb-2 px-4 transition-colors">All
+                                                Suites</button>
+                                        <button
+                                                class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary pb-2 px-4 transition-colors">Studio</button>
+                                        <button
+                                                class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary pb-2 px-4 transition-colors">1
+                                                Bedroom</button>
+                                        <button
+                                                class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary pb-2 px-4 transition-colors">2
+                                                Bedroom</button>
+                                </div>
+                        </div>
+                </section>
+                <!-- Room Listings (Bento/Asymmetric style) -->
+                <section class="py-16 md:py-24 bg-surface">
+                        <div
+                                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-24">
+                                <!-- Room 1: The Executive Studio -->
+                                <div class="flex flex-col md:flex-row gap-12 items-center group">
+                                        <div
+                                                class="w-full md:w-7/12 relative aspect-[3/2] overflow-hidden bg-surface-variant">
+                                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                        data-alt="A meticulously designed executive studio apartment. The space features a streamlined, modern workspace with a sleek wooden desk, an ergonomic chair, and a compact yet fully equipped kitchenette in the background. The lighting is bright and professional, highlighting the rich navy blue upholstery against crisp white walls and warm timber floors. The mood is sophisticated and productive, tailored for business travelers."
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgoyilAf3IeqoHsH-bsuwcfVqXHncjnNNLtS7ghGF94Nfxem2IcC_JhkDgGCzs8ZnXvTcijOnvCjpbT0E9fqNzCM-3CPw-cEplpy2D8cs9O4njvkjOhse5HmptgMmjX_e2cCwT4GzzAWVufntM53mxTH9gy9_S7-c3mYwqU4Gm-QYUe6GgDA32WlPR5Fe7T7Qe1ZCKLMwmcFvBw9qoATtfz754nIBdLskD3BdlnSuzjMgqVt6G5DBf6A" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-surface-container-low text-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+                                                        Available
+                                                </div>
+                                        </div>
+                                        <div class="w-full md:w-5/12 flex flex-col items-start">
+                                                <h2 class="font-headline-md text-headline-md text-primary mb-4">The
+                                                        Executive Studio</h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                                                        Tailored for the modern business traveler, our Executive Studio
+                                                        maximizes space without compromising on luxury. Enjoy a
+                                                        dedicated workspace, a fully equipped kitchenette, and seamless
+                                                        connectivity.
+                                                </p>
+                                                <div class="grid grid-cols-2 gap-4 mb-8 w-full">
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="wifi">wifi</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">High-Speed
+                                                                        Wi-Fi</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="kitchen">kitchen</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Kitchenette</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="desk">desk</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Workspace</span>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="flex items-end justify-between w-full border-t border-surface-variant pt-6 mt-auto">
+                                                        <div>
+                                                                <span
+                                                                        class="font-body-md text-body-md text-on-surface-variant block">Starting
+                                                                        from</span>
+                                                                <span
+                                                                        class="font-headline-sm text-headline-sm text-primary">₹2500
+                                                                        / night</span>
+                                                        </div>
+                                                        <button
+                                                                class="bg-sky-blue-pastel text-primary px-6 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-primary-fixed hover:text-primary transition-colors duration-300">
+                                                                View Details
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Room 2: 1 Bedroom Premium (Reversed) -->
+                                <div class="flex flex-col md:flex-row-reverse gap-12 items-center group">
+                                        <div
+                                                class="w-full md:w-7/12 relative aspect-[3/2] overflow-hidden bg-surface-variant">
+                                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                        data-alt="A spacious one-bedroom premium apartment living room. The scene showcases a comfortable, plush sofa in deep navy, a modern coffee table, and a view into a full-sized, sleek kitchen with state-of-the-art appliances. Large windows let in abundant natural light, highlighting the refined textures of the luxurious rugs and subtle metallic accents. The atmosphere is serene, welcoming, and perfect for long-term stays."
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_iBdUHixP7xO9qPbKxzFMhBkh3l7jAXau0ubUi5k3CBb_c4c5CJwOTSrIB4SG51S6RycLDR2x1L5JgaDBPuV4852ld6KujGM8gokXjxFy4kn2WerUCP1_m2Tq6xtcix0Qd9nqPBN-peVGmGHfW8JCZX8_6gNjQJRwkPfkjCWcDj8TUfnE4NGUzt9nhP6_gbNcSzkgGKMhJm0hxonrhE8Bm3ybdFclMNgXttFvnKUVzW6vbuOFBKg2pA" />
+                                        </div>
+                                        <div class="w-full md:w-5/12 flex flex-col items-start md:pr-12">
+                                                <h2 class="font-headline-md text-headline-md text-primary mb-4">1 BHK
+                                                        Flat</h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                                                        Designed for extended stays and profound comfort. The 1 Bedroom
+                                                        Premium offers a distinct separation between living and resting
+                                                        spaces, featuring a full-sized kitchen and an expansive lounge
+                                                        area.
+                                                </p>
+                                                <div class="grid grid-cols-2 gap-4 mb-8 w-full">
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="living">living</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Separate
+                                                                        Living Area</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="countertops">countertops</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Full
+                                                                        Kitchen</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="local_laundry_service">local_laundry_service</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">In-room
+                                                                        Laundry</span>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="flex items-end justify-between w-full border-t border-surface-variant pt-6 mt-auto">
+                                                        <div><span
+                                                                        class="font-body-md text-body-md text-on-surface-variant block">Starting
+                                                                        from</span>
+                                                                <div class="flex items-center gap-2"><span
+                                                                                class="font-headline-sm text-headline-sm text-primary">₹2,200
+                                                                                / night</span><span
+                                                                                class="bg-sky-blue-pastel text-primary px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter">10%
+                                                                                Promotional Offer Applied</span></div>
+                                                        </div>
+                                                        <button
+                                                                class="bg-sky-blue-pastel text-primary px-6 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-primary-fixed hover:text-primary transition-colors duration-300">
+                                                                View Details
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Room 3: 2 Bedroom Grand -->
+                                <div class="flex flex-col md:flex-row gap-12 items-center group">
+                                        <div
+                                                class="w-full md:w-7/12 relative aspect-[3/2] overflow-hidden bg-surface-variant">
+                                                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                                        data-alt="An expansive two-bedroom grand suite designed for family living. The image captures a large, open-plan living and dining area leading out to a private balcony with city views. Elegant, understated luxury is evident in the premium materials, comfortable seating arrangements, and refined color palette of whites, soft greys, and navy. The lighting is bright and inviting, conveying a sense of ultimate residential comfort."
+                                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9I-1hhyQCI25WYtgMjzfW1vnO_-dIiAflEN_Ao6sdTuSb44reoSI1rhaxTgCH9pycxV4IXoszsW1fbVhZdZwlUltsHPBtWfKelGjqngCAnU1HGpQoSBTUhMKerExkeaI081SgDLz5ENjkTShpfzm44zmXMOg5oGdRUOpBmCpoE7Z3_O1ValRPHclfFInSNqjoZb5pcM8VuboWzt5Mc1Cl5SfYLeUbWHgg9z-eofSRtKEHWR0aq58FZQ" />
+                                                <div
+                                                        class="absolute top-4 left-4 bg-sky-blue-pastel text-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+                                                        Luxury Suite
+                                                </div>
+                                        </div>
+                                        <div class="w-full md:w-5/12 flex flex-col items-start">
+                                                <h2 class="font-headline-md text-headline-md text-primary mb-4">2 BHK
+                                                        Flat</h2>
+                                                <p
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                                                        The ultimate residence for families or colleagues sharing space.
+                                                        This grand suite features two generous bedrooms, two full
+                                                        bathrooms, a comprehensive kitchen, and a private balcony for
+                                                        unwinding.
+                                                </p>
+                                                <div class="grid grid-cols-2 gap-4 mb-8 w-full">
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="balcony">balcony</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Private
+                                                                        Balcony</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="bathtub">bathtub</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Two
+                                                                        Bathrooms</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-2 text-primary">
+                                                                <span class="material-symbols-outlined text-[20px]"
+                                                                        data-icon="family_restroom">family_restroom</span>
+                                                                <span
+                                                                        class="font-label-md text-label-md text-on-surface-variant">Family
+                                                                        Friendly</span>
+                                                        </div>
+                                                </div>
+                                                <div
+                                                        class="flex items-end justify-between w-full border-t border-surface-variant pt-6 mt-auto">
+                                                        <div><span
+                                                                        class="font-body-md text-body-md text-on-surface-variant block">Starting
+                                                                        from</span>
+                                                                <div class="flex items-center gap-2"><span
+                                                                                class="font-headline-sm text-headline-sm text-primary">₹3,200
+                                                                                / night</span><span
+                                                                                class="bg-sky-blue-pastel text-primary px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-tighter">10%
+                                                                                Promotional Offer Applied</span></div>
+                                                        </div>
+                                                        <button
+                                                                class="bg-sky-blue-pastel text-primary px-6 py-3 font-label-md text-label-md uppercase tracking-wider hover:bg-primary-fixed hover:text-primary transition-colors duration-300">
+                                                                View Details
+                                                        </button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full bg-primary text-on-primary">
+                <div
+                        class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+                        <div class="col-span-1 md:col-span-1 flex flex-col">
+                                <span
+                                        class="font-headline-md text-headline-md text-on-primary mb-6 italic">Aathidhyam</span>
+                                <p class="font-body-md text-body-md text-on-primary/80 mb-6 max-w-xs">
+                                        Refined service apartments offering understated luxury and heritage modernity
+                                        for the discerning traveler.
+                                </p>
+                        </div>
+                        <div class="col-span-1 md:col-span-2 flex flex-col md:flex-row gap-12 md:gap-24 justify-center">
+                                <div class="flex flex-col space-y-4">
+                                        <h4
+                                                class="font-label-md text-label-md uppercase tracking-wider text-sky-blue-pastel mb-2">
+                                                Explore</h4>
+                                        <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors"
+                                                href="#">Home</a>
+                                        <a class="font-body-md text-body-md text-sky-blue-pastel font-bold"
+                                                href="#">Suites</a>
+                                        <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors"
+                                                href="#">Services</a>
+                                </div>
+                                <div class="flex flex-col space-y-4">
+                                        <h4
+                                                class="font-label-md text-label-md uppercase tracking-wider text-sky-blue-pastel mb-2">
+                                                Legal &amp; Info</h4>
+                                        <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors"
+                                                href="#">Privacy Policy</a>
+                                        <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors"
+                                                href="#">Terms of Service</a>
+                                        <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors"
+                                                href="#">Location</a>
+                                        <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors"
+                                                href="#">Careers</a>
+                                </div>
+                        </div>
+                        <div class="col-span-1 md:col-span-1 flex flex-col items-start md:items-end">
+                                <h4
+                                        class="font-label-md text-label-md uppercase tracking-wider text-sky-blue-pastel mb-4">
+                                        Contact Us</h4>
+                                <a class="font-body-md text-body-md text-on-primary/80 hover:text-sky-blue-pastel transition-colors mb-2"
+                                        href="mailto:info@aathidhyam.com">info@aathidhyam.com</a>
+                                <span class="font-body-md text-body-md text-on-primary/80 mb-8">+1 (555) 123-4567</span>
+                        </div>
+                </div>
+                <div
+                        class="border-t border-on-primary/20 px-margin-mobile md:px-margin-desktop py-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto">
+                        <span class="font-body-md text-body-md text-on-primary/60 text-sm">© 2024 Aathidhyam Service
+                                Apartments. All rights reserved.</span>
+                </div>
+        </footer>
+</body>
+
+</html>
